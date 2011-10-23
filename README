@@ -1,0 +1,8 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3785
+
+VIM scripts can edit themselves, thus we could 'edit', '?', 's', 'source' scripts to create some domain specific language like :
+
+silent! 0,$s/\vFunc\[(.+)\]\{(.+)\}/fun!\1\r\2\rendfun\r/g
+Func[Test()]{return 3}
+
+Notice the function is considered one-liner. I hope it is helpful.
